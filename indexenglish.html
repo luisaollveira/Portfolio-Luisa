@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Luísa de Oliveira Moretto</title>
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+    <button id="voltar-ao-inicio">Back to home</button>
+
+    <header>
+        <div class="interface">
+            <a href="./index.html" id="btn-id">EN</a>
+            <!-- Restante do cabeçalho -->
+        </div>
+        
+        <div class="interface">
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#sobremim" class="scroll-link">About me</a></li>
+                    <li><a href="#habilidades" class="scroll-link">Skills</a></li>
+                    <li><a href="#meuportfolio" class="scroll-link">Projects</a></li>
+                    <li><a href="#form" class="scroll-link">Contact Me</a></li>
+                </ul>
+            </nav>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var links = document.querySelectorAll('.scroll-link');
+                    for (var i = 0; i < links.length; i++) {
+                        links[i].addEventListener('click', scrollToSection);
+                    }
+
+                    function scrollToSection(event) {
+                        event.preventDefault();
+                        var targetId = this.getAttribute('href');
+                        var targetPosition = document.querySelector(targetId).offsetTop;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            </script>
+
+            <div class="btn-contato">
+                <a href="https://wa.me/5554999553187">
+                    <button>Contact</button>
+                </a>
+            </div><!-- btn-contato -->
+
+        
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!-- interface -->
+    </header>
+
+    <main>
+        <section id="sobremim">
+            <section class="sobre">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="img-sobre">
+                            <img src="images/foto.png" alt="">
+                        </div><!-- img-sobre -->
+                        <img class="fotoluisa" src="./img/fotoluisa.png"></img>
+                        <div class="txt-sobre">
+                            <h2>NICE TO MEET YOU, <span>I'M LUÍSA DE OLIVEIRA MORETTO</span></h2>
+                            <p>I'm currently studying Systems Analysis and Development at the Federal Institute of Rio Grande do Sul. My focus is on web development and social media, and I'm constantly seeking new learning opportunities.
+                            </p>
+                            <p>I have solid skills in some languages and technologies, including HTML, CSS, and JavaScript, I also have prior knowledge of SQL and Github. These competencies enable me to tackle challenges in developing high-quality web systems.
+                            </p>
+                            <p>
+                                My experience in social media management has allowed me to acquire practical knowledge in digital marketing strategies. This has resulted in a significant increase in brand visibility and engagement. I highlight my ability to communicate directly with clients, ensuring efficient and quality interactions.
+
+                            </p>
+                            <div class="btn-social">
+
+                                <a href="mailto:luisadeoliveiramoretto@gmail.com"><button><i class="bi bi-envelope"></i></button></a>
+                                <a href="https://linkedin.com/in/luisaollveira"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://drive.google.com/file/d/1Eej-apcS2RkxP47wNmOSwmZ7vaF4gGJ2/view?usp=drive_link"><button><i class="bi bi-folder"></i></button></a>
+                            </div><!-- btn-social -->
+                        </div><!-- txt-sobre -->
+                    </div><!-- flex -->
+                </div><!-- interface -->
+            </section><!-- sobre -->
+        </section> <!-- sobremim -->
+
+
+        <section id="habilidades">
+            <section class="especiliadades">
+                <div class="interface">
+                    <h2 class="titulo">MY <span>SKILLS</span></h2>
+                    <div class="flex">
+                        <div class="especialidades-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>Front-End</h3>
+                            <p>I constantly seek to improve my knowledge in the area of ​​front-end programming, with experience in JavaScript, HTML and CSS. I developed specific skills to create interactive and visually appealing web interfaces, resulting in significant contributions to projects. My dedication to front-end programming allows me to implement innovative and efficient solutions.</p>
+                        </div><!-- especialidades-box -->
+
+                        <div class="especialidades-box">
+                            <i class="bi bi-instagram"></i>
+                            <h3>Social Media</h3>
+                            <p>I specialize in digital marketing, developing strategies to increase visibility and engagement on social networks, producing high-quality content and communicating effectively with customers to meet their needs satisfactorily. 
+                            You can check out some of the work I did by clicking the button below.
+                            </p>
+                             <div class="btn-contato2">
+                            <a href="https://www.behance.net/luisaollveira"> 
+                            <button>Designers</button></a></div>
+                        </div>
+                        
+                      
+
+
+
+
+
+                        <!-- especialidades-box --><div class="especialidades-box">
+                            <i class="bi bi-folder"></i>
+                            <h3>Languages</h3>
+                            <p>I have advanced knowledge in English and basic skills in Spanish. These language skills are valuable tools for handling projects and interacting with clients from diverse backgrounds.</p>
+                        </div><!-- especialidades-box -->
+                    </div><!-- flex -->
+                </div><!-- interface -->
+            </section><!-- especiliadades -->
+        </section>
+
+        <section id="meuportfolio">
+            <section class="portfolio">
+                <div class="interface">
+                    <h2 class="titulo">MY <span>PORTFOLIO</span></h2>
+                    <div class="flex">
+                        <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay"><a href="https://luisaollveira.github.io/Vida-Saudavel/index.html">Project 1 - Healthy life</a></div>
+                        </div>
+                        <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay"><a href="https://lighthearted-pixie-aaf354.netlify.app/">Project 2 - Library</a></div>
+                        </div>
+                        <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay"><a href="https://main--chimerical-piroshki-c369c8.netlify.app/#/">Project 3 - To do list</a></div>
+                        </div>
+                    </div><!-- flex -->
+                </div><!-- interface -->
+            </section><!-- portfolio -->
+        </section>
+
+        <section id="form">
+            <section class="formulario">
+                <div class="interface">
+                    <h2 class="titulo">CONTACT <span>ME:</span></h2>
+
+                    <form action="https://formspree.io/f/mqkrbwdl" method="POST">
+                        <input type="text" name="nome" placeholder="Full Name:" required>
+                        <input type="text"  placeholder="E-mail:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
+                        <input type="text" name="celular" placeholder="Phone:">
+                        <textarea name="mensagem" placeholder="Leave a message:" required></textarea>
+                        <div class="btn-enviar"><input type="submit" value="SEND"></div>
+                    </form>
+                </div><!-- interface -->
+            </section><!-- formulario -->
+            
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+
+                        <a href="mailto:luisadeoliveiramoretto@gmail.com"><button><i class="bi bi-envelope"></i></button></a>
+                        <a href="https://linkedin.com/in/luisaollveira"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/luisaollveira"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://drive.google.com/file/d/1Eej-apcS2RkxP47wNmOSwmZ7vaF4gGJ2/view?usp=drive_link"><button><i class="bi bi-folder"></i></button></a>
+                        <a href="https://wa.me/5554999553187"><button><i class="bi bi-whatsapp"></i></button></a>
+                    </div><!-- btn-social -->
+                </div>
+            </div><!-- line-footer -->
+
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var botaoVoltar = document.getElementById('voltar-ao-inicio');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 200) { // Se o usuário rolou mais de 200 pixels para baixo
+                botaoVoltar.style.display = 'block';
+            } else {
+                botaoVoltar.style.display = 'none';
+            }
+        });
+
+        botaoVoltar.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
+
+<style type="text/css">
+
+    /* Media query para dispositivos móveis */
+    /* Media query para dispositivos móveis */
+    /* Media query para dispositivos móveis */
+    /* Media query para dispositivos móveis */
+    @media only screen and (max-width: 768px) {
+    
+    
+        .btn-social{
+            color: #000;
+        }
+    
+        .btn-contato2{
+            color: #000;
+        }
+    /* Ocultando o menu desktop */
+    nav.menu-desktop {
+        display: none;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    /* Ajustar a largura dos elementos para ocupar toda a largura disponível */
+    .txt-sobre,
+    .especialidades {
+        width: 100%;
+    }
+    
+    .txt-sobre{
+        margin-top: 0%;
+    }
+    /* Resetando a largura das especialidades para ocupar 100% da largura */
+    .especialidades-box {
+        width: 100%; 
+    }
+    
+    /* Resetando a largura das imagens do portfólio para ocupar 100% da largura */
+    .img-port {
+        width: 100%; 
+    }
+    
+    /* Resetando a largura do formulário para ocupar 100% da largura */
+    section.formulario {
+        width: 100%; 
+    }
+    
+    /* Resetando a largura do cabeçalho para ocupar 100% da largura */
+    header {
+        width: 100%; 
+    }
+    
+    /* Resetando a largura dos itens do menu para ocupar 100% da largura */
+    nav.menu-desktop ul li {
+        width: 100%; 
+        text-align: center; /* Centraliza os itens do menu */
+    }
+    
+    
+    
+    /* Ocultando a imagem da Luísa */
+    .fotoluisa {
+        display: none;
+    }
+    
+    /* Estilo do menu-desktop para dispositivos móveis */
+    .menu-desktop ul {
+        padding: 0; /* Remove o espaçamento interno */
+    }
+    
+    .menu-desktop ul li {
+        display: block; /* Exibe cada item da lista em bloco */
+        margin-bottom: 10px; /* Adiciona um espaçamento entre os itens */
+    }
+    
+    .btn-contato{
+        display: none;
+    }
+    }
+    
+    
+    
+    
+    
+    
+        #btn-id {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 12px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-right: 90px;
+        }
+    
+        #btn-id:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    
+        #voltar-ao-inicio {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            background-color: #c2bfc1;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    
+        #voltar-ao-inicio:hover {
+            background-color: #c2bfc1;
+        }
+    
+        /* ESTILO GERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        body {
+            background-color: #ffffff;
+            height: 100vh;
+        }
+    
+        .flex {
+            display: flex;
+        }
+        .fotoluisa{
+           padding:0px;
+           width: 250px;
+        }
+        .btn-contato button {
+            padding: 10px 35px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #c2bfc1;
+            border: 0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .2s;
+        }
+    
+        .btn-contato2 button {
+            padding: 10px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #c2bfc1;
+            border: 0;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        h2.titulo {
+            color: #000000;
+            font-size: 38px;
+            text-align: center;
+        }
+    
+        h2.titulo span {
+            color: #c2bfc1;
+        }
+    
+        button:hover,
+        form .btn-enviar input:hover {
+            box-shadow: 0px 0px 8px #c2bfc1;
+            transform: scale(1.05);
+        }
+    
+        /* ESTILO DO CABEÇALHO */
+        header {
+            padding: 40px 4%;
+        }
+    
+        header>.interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 20px;
+        }
+    
+        header a {
+            color: #000000;
+            text-decoration: none;
+            display: inline-block;
+            transition: .2s;
+        }
+    
+        header nav.menu-desktop a:hover {
+            color: #000000;
+            transform: scale(1.05);
+        }
+    
+        header nav ul {
+            list-style-type: none;
+        }
+    
+        header nav.menu-desktop ul li {
+            display: inline-block;
+            padding: 0 40px;
+        }
+    
+        /* ESTILO DO MENU MOBILE */
+        .btn-abrir-menu i {
+            color: #c2bfc1;
+            font-size: 40px;
+        }
+        .overlay-menu {
+            background-color: #000000df;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+            display: none;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    
+        /* ESTILO DO TOPO DO SITE */
+        section.topo-do-site {
+            padding: 40px 4%;
+        }
+    
+        section.topo-do-site .flex {
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+        }
+    
+        .topo-do-site h1 {
+            color: #000000;
+            font-size: 42px;
+            line-height: 40px;
+        }
+    
+        .topo-do-site .txt-topo-site h1 span {
+            color: #c2bfc1;
+        }
+    
+        .topo-do-site .txt-topo-site p {
+            color: #000000;
+            margin: 40px 0;
+        }
+    
+        .topo-do-site .img-topo-site img {
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+        }
+    
+        @keyframes flutuar {
+            0% {
+                top: 0;
+            }
+    
+            100% {
+                top: 30px;
+            }
+        }
+    
+            /* ESTILO DAS ESPECIALIDADES */
+            section.especiliadades {
+            padding: 40px 4%;
+        }
+    
+        section.especiliadades .flex {
+            gap: 20px;
+        }
+    
+        .especiliadades .especialidades-box {
+            color: #000000;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 45px;
+            transition: .2s;
+            text-align: justify;
+        }
+    
+        .especiliadades .especialidades-box i {
+            font-size: 40px;
+            color: #c2bfc1;
+        }
+    
+        .especiliadades .especialidades-box h3 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+    
+        /* ESTILO DO SOBRE */
+        section.sobre {
+            padding: 80px 4%;
+        }
+    
+        section.sobre .flex {
+            align-items: center;
+            gap: 60px;
+        }
+    
+        .sobre .txt-sobre {
+            color: #000000;
+        }
+    
+        .sobre .txt-sobre h2 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+    
+        .sobre .txt-sobre h2 span {
+            color:#c2bfc1;
+            display: block;
+        }
+    
+        .sobre .txt-sobre p {
+            margin: 20px 0;
+            text-align: justify;
+        }
+    
+        .btn-social button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color:#c2bfc1;
+            font-size: 22px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: .2s;
+            border-left: 100px;
+        }
+    
+        /* ESTILO DO PORTFÓLIO */
+        section.portfolio {
+            padding: 80px 4%;
+            box-shadow: 0 0 40px 10px #fffdfd10;
+            border-radius: 20px;
+            color: #000;
+        }
+    
+        section.portfolio .flex {
+            gap: 60px;
+        }
+    
+        .portfolio .flex .img-port {
+            height: 280px;
+            width: 33.333333%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 30px 0 #00000010;
+        }
+    
+        .portfolio .flex .img-port:hover {
+            box-shadow: 0 0 30px 0 #00000020;
+        }
+    
+        .portfolio .flex .img-port .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: .3s;
+            color: #000000df;
+        }
+    
+        .portfolio .flex .img-port .overlay {
+            opacity: 1;
+        }
+    
+        .portfolio .flex .img-port .overlay a {
+            background-color: #c2bfc1;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            color: #000000;
+            font-size: 18px;
+            transition: .2s;
+        }
+    
+        .portfolio .flex .img-port .overlay a:hover {
+            box-shadow: 0px 0px 8px#c2bfc1;
+            transform: scale(1.05);
+        }
+    
+        /* ESTILO DO FORMULÁRIO */
+        section.formulario {
+            padding: 80px 4%;
+            box-shadow: 0 0 40px 10px #00000010;
+            border-radius: 20px;
+        }
+    
+        section.formulario input[type="text"],
+        section.formulario input[type="email"],
+        section.formulario textarea {
+            width: 100%;
+            padding: 20px;
+            margin: 20px 0;
+            border: none;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            resize: none;
+            transition: .2s;
+        }
+    
+        section.formulario input[type="text"]:focus,
+        section.formulario input[type="email"]:focus,
+        section.formulario textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px 0 #c2bfc1;
+        }
+    
+        section.formulario .btn-enviar input {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #c2bfc1;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .2s;
+        }
+    
+        section.formulario .btn-enviar input:hover {
+            box-shadow: 0px 0px 8px #c2bfc1;
+            transform: scale(1.05);
+        }
+    
+        /* ESTILO DO RODAPÉ */
+        footer {
+            background-color: #ffffff;
+            
+            padding: 40px 4%;
+        }
+    
+        footer .interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        footer .line-footer {
+            border-top: 2px solid ;
+            padding-top: 40px;
+        }
+    
+        footer .line-footer .flex {
+            justify-content: center;
+        }
+    
+        footer .line-footer .btn-social button {
+            background-color:#c2bfc1 ;
+            border: 2px solid ;
+            border-radius: 50%;
+            color: #000000;
+            padding: 15px;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: .2s;
+            border-color: #c2bfc1;
+        }
+    
+        
+    
+        
+            
+    
+            /* ESTILO DO RODAPÉ */
+            footer .line-footer {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            footer .line-footer .btn-social button {
+                margin: 10px 0;
+            }
+    
+            /* ESTILO DO PORTFÓLIO */
+            section.portfolio .flex {
+                flex-direction: column;
+            }
+    
+            .portfolio .flex .img-port {
+                width: 100%;
+            }
+        }
+    </style>
+
+</html>
